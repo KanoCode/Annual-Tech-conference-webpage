@@ -10,6 +10,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -17,9 +18,99 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <title>Annual Music conference</title>
   </head>
-  <body>
+  <body class="">
+    <div class="container-md-fluid bg-dark text-light">
+      <ul class="d-md-flex container d-none justify-content-end">
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-facebook-f"></i></li>
+        <li><p>English</p></li>
+        <li><p>My Page</p></li>
+        <li><p>Login</p></li>
+      </ul>
+    </div>
+    <nav class="navbar navbar-expand-md collapse navbar-collapse">
+      <a href="#" class="navbar-brand"><i class="fa-solid fa-bars"></i> </a>
+    </nav>
+    <section class="welcome container">
+      <h1>ILinux. Connect</h1>
+      <h2>2022</h2>
+    </section>
+    <section class="bg-dark container main-program">
+     <div class="row d-flex flex-column justify-content-center align-items-center">
+      <h2 class="text-center text-light">Main Program</h2>
+      <span class=""></span>
+     </div>
+      <div class="programs row my-4">
+        <div class="icon col-3"><img class="img-fluid " src="./assets/program-icons/contract.png" alt="" srcset=""></div>
+        <h3 class="text col-4">3 Life changing days</h3>
+        <p class="col text-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum
+          quibusdam adipisci? Expedita laboriosam ut dicta maxime, a itaque in
+  
+          Tempora.
+        </p>
+      </div>
+      <div class="programs row my-4">
+        <div class="icon col-3"><img class="img-fluid " src="./assets/program-icons/artificial-intelligence.png" alt="" srcset=""></div>
+        <h3 class="text col-4">Learn AI from leading proffesionals </h3>
+        <p class="col text-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum
+          quibusdam adipisci
+          
+        </p>
+      </div>
+      <div class="programs row my-4">
+        <div class="icon col-3"><img class="img-fluid " src="./assets/program-icons/board-meeting.png" alt="" srcset=""></div>
+        <h3 class="text col-4">Meet influencers, recruiters </h3>
+        <p class="col text-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum
+          quibusdam adipisc
+        </p>
+      </div>
+      <div class="programs row my-4">
+        <div class="icon col-3"><img class="img-fluid " src="./assets/program-icons/testing.png" alt="" srcset=""></div>
+        <h3 class="text col-4">Become a beta tester </h3>
+        <p class="col text-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum
+          quibusdam adipisci? 
+        </p>
+      </div>
+     
+      <div class="programs row my-4">
+        <div class="icon col-3"><img class="img-fluid " src="./assets/program-icons/conversation.png" alt="" srcset=""></div>
+        <h3 class="text col-4">Build connections </h3>
+        <p class="col text-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum
+          quibusdam adipisci? 
+        </p>
+      </div>
+
+      <button class="reserve-your-spot btn text-light">Reserve your spot</button>
+    </section>
+
+    <section class="speakers">
+      <div class="row d-flex text-dark flex-column justify-content-center align-items-center intro-speakers">
+        <h2 class="text-center text-light">Featured Speakers</h2>
+        <span class=""></span>
+       </div> 
+      <div class="pt-3 card-md row">
+        <div class="card-img col-4 "> <img src="./assets/speakers/pexels-brad-hanks-4757205.jpg" class="img-fluid" alt="" srcset=""></div>
+  
+        <div class="card-content col-8">
+          <h3>Brad </h3>
+          <h4>Position, influences</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At facere
+            ipsum totam in ab modi atque laborum icabo.
+          </p>
+        </div>
+      </div>
+
+      <button class="show-more btn "> see More <i class="fa-solid fa-angle-down"></i></button>
+    </section>
+   
     <script src="./nav-menu.js"></script>
     <script src="./dynamic-html.js"></script>
   </body>
