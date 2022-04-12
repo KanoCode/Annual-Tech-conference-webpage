@@ -1,15 +1,83 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+nav {
+  background-color: transparent;
+}
+
+nav i {
+  position: relative;
+  color: #d3d3d3;
+  font-size: 35px;
+}
+
 .welcome {
-  background-image: url(../assets/product-school-r1wHNmAPWKA-unsplash.jpg);
+  background: url(../assets/product-school-r1wHNmAPWKA-unsplash.jpg);
   height: 60vh;
   background-size: cover;
   background-color: #fff;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.welcome button {
+  background-color: #ec5242;
+  border-radius: 0;
 }
 
 .welcome h1 {
   color: #fff;
-  font-size: 100px;
+  font-size: 4.1rem;
+  width: 98%;
   border: solid;
   font-style: bold;
+  z-index: 10;
+}
+
+.welcome h1 span {
+  color: #ec5242;
+}
+
+.welcome::before {
+  content: "";
+  background: rgba(46, 46, 46, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 90px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.hero-container h2 {
+  color: #ec5242;
 }
 
 .main-program h3 {
@@ -26,8 +94,10 @@
 .main-program button {
   background-color: #ec5242;
   border-radius: 0;
-  margin: 10% 50%;
-  border: solid green;
+}
+
+.speakers .intro-speakers h2 {
+  color: #272a31;
 }
 
 .speakers .intro-speakers span {
@@ -42,5 +112,47 @@
 
 .speakers button i {
   color: #ec5242;
+}
+
+.card-item .speaker-bg {
+  position: absolute;
+  max-width: 50px;
+  max-height: 50px;
+  width: 100%;
+  z-index: -45;
+}
+
+.card-item .card-id {
+  padding-left: 6%;
+}
+
+.card-item .card-id span {
+  background: #d3d3d3;
+  width: 30px;
+  height: 4px;
+}
+
+.card-item .img-fluid {
+  margin-left: 13%;
+  margin-top: 16%;
+}
+
+.card-item h3 {
+  font-size: 18px;
+}
+
+.card-item h4 {
+  font-size: 15px;
+  color: #ec5242;
+}
+
+.show-more {
+  border: solid #d3d3d3 2px;
+  color: #d3d3d3;
+  margin-top: 10px;
+}
+
+.show-more button {
+  background-color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */

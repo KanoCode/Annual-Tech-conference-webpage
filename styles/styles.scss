@@ -1,20 +1,90 @@
+$grey:#d3d3d3;
+$red-text:#ec5242;
+$dark:#272a31;
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    
+}
+
+
+@mixin  buttonStyles {
+    button{
+        background-color: #ec5242;
+        border-radius: 0;
+    }
+}
+
+
+
+nav{
+    background-color: transparent;
+    i{
+      position: relative;
+        color:$grey;
+        font-size: 35px;
+    }
+}
 
 
 .welcome {
-    background-image: url(../assets/product-school-r1wHNmAPWKA-unsplash.jpg) ;
+    background:url(../assets/product-school-r1wHNmAPWKA-unsplash.jpg) ;
  height: 60vh;
  background-size: cover;
  background-color: #fff;
-//  width: 100%;   
+ width: 100%;   
+ min-height: 100vh;
+
+ 
+@include buttonStyles;
+
 
 
 h1{
     color: #fff;
-font-size: 100px;
+font-size: 4.1rem;
+width: 98%;
 border: solid;
 font-style: bold;
+z-index: 10;
+span{
+    color:#ec5242;
+
 }
 }
+}
+
+.welcome::before {
+    content: "";
+    background: rgba(46, 46, 46, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.hero-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 90px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+    h2{
+        color: #ec5242;
+    }
+}
+
+
 
 .main-program{
 
@@ -28,17 +98,14 @@ font-style: bold;
         width: 100px;
         height: 2px;
     }
-    button{
-        background-color: #ec5242;
-        border-radius: 0;
-    margin:10% 50%;
-    border: solid green;
-    }
+   @include buttonStyles;
 }
 
 .speakers{
 .intro-speakers{
-
+    h2{
+        color: $dark;
+    }
     span{
         background-color: #ec5242;
         width: 100px;
@@ -52,4 +119,47 @@ font-style: bold;
         }
     }
 
+}
+
+
+.card-item{
+    .speaker-bg{
+position: absolute;
+max-width: 50px;
+max-height: 50px;
+width: 100%;
+z-index: -45;
+    }
+
+    .card-id {
+padding-left: 6%;
+       
+        span{
+            background:$grey;
+            width: 30px;
+            height: 4px;
+        }
+    }
+ 
+
+    .img-fluid{
+        margin-left: 13%;
+    margin-top: 16%;
+    }
+    h3{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 15px;
+        color: $red-text;
+    }
+}
+
+.show-more{
+   border: solid $grey 2px;
+   color: $grey;
+    margin-top: 10px;
+    button{
+        background-color: #fff;
+    }
 }
