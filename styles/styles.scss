@@ -1,0 +1,55 @@
+
+
+.welcome {
+    background-image: url(../assets/product-school-r1wHNmAPWKA-unsplash.jpg) ;
+ height: 60vh;
+ background-size: cover;
+ background-color: #fff;
+//  width: 100%;   
+
+
+h1{
+    color: #fff;
+font-size: 100px;
+border: solid;
+font-style: bold;
+}
+}
+
+.main-program{
+
+
+    h3{
+        color:#ec5242;
+    font-size: 100%;
+    }
+    span{
+        background-color: #ec5242;
+        width: 100px;
+        height: 2px;
+    }
+    button{
+        background-color: #ec5242;
+        border-radius: 0;
+    margin:10% 50%;
+    border: solid green;
+    }
+}
+
+.speakers{
+.intro-speakers{
+
+    span{
+        background-color: #ec5242;
+        width: 100px;
+        height: 2px;
+    }
+}
+    button{
+        width: 80%;
+        i{
+            color: #ec5242;
+        }
+    }
+
+}
