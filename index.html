@@ -21,10 +21,9 @@
     <title>Annual Music conference</title>
   </head>
   <body class="">
-
-    <header id="header" class="container">
-      <div class="container-md-fluid bg-dark text-light">
-        <ul class="d-md-flex container d-none justify-content-end">
+    <header id="header">
+      <div class="container-md bg-dark text-light">
+        <ul class="">
           <li><i class="fa-brands fa-twitter"></i></li>
           <li><i class="fa-brands fa-facebook-f"></i></li>
           <li><p>English</p></li>
@@ -32,12 +31,21 @@
           <li><p>Login</p></li>
         </ul>
       </div>
-      <nav class="navbar navbar-expand-md collapse navbar-collapse">
-        <a href="#" class="navbar-brand"><i class="fa-solid fa-bars"></i> </a>
+      <nav class="navbar bg-light">
+        <a href="#" id="logo-img" class="navbar-brand"> <img src="assets/ILinuxConnect-logos_black.png" alt="" srcset=""> <i class="fa-solid d-md-none fa-bars"></i>
+
+        </a>
+
+        <ul class="">
+<li><a href="#"> About</a></li>
+<li><a href="#"> Program</a></li>
+<li><a href="#"> Sponsers</a></li>
+<li><a href="#"> Campaign</a></li>
+        </ul>
       </nav>
     </header>
-    
-    <section class="welcome container">
+
+    <section class="welcome">
       <div class="hero-container">
         <h1>Global <span>ILinux.</span> Connect</h1>
         <h2>2022...</h2>
@@ -47,7 +55,7 @@
         <button class="reserve-your-spot btn text-light p-3 m-4">
           Reserve your spot
         </button>
-        <p class="text-light">
+        <p class="text-light event-description">
           Welcome to the biggest tech event of the year. where the best minds
           meet every year to discuss the future of innovation. Join us for our
           2022 chapter, you can't afford to miss this event.
@@ -55,89 +63,89 @@
         <br />
       </div>
     </section>
-    <section class="bg-dark container main-program mt-4">
+    <section class="bg-dark main-program mt-4 container-fluid">
       <div
         class="row d-flex flex-column justify-content-center align-items-center"
       >
-        <h2 class="text-center text-light">Main Program</h2>
+        <h2 class="text-center text-light">Conference Highlights</h2>
         <span class=""></span>
       </div>
-      <div class="programs row my-4">
-        <div class="icon col-3">
-          <img
-            class="img-fluid"
-            src="./assets/program-icons/contract.png"
-            alt=""
-            srcset=""
-          />
-        </div>
-        <h3 class="text col-4">3 Life changing days</h3>
-        <p class="col text-light">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum
-          quibusdam adipisci? Expedita laboriosam ut dicta maxime, a itaque in
-          Tempora.
-        </p>
-      </div>
-      <div class="programs row my-4">
-        <div class="icon col-3">
-          <img
-            class="img-fluid"
-            src="./assets/program-icons/artificial-intelligence.png"
-            alt=""
-            srcset=""
-          />
-        </div>
-        <h3 class="text col-4">Learn AI from leading proffesionals</h3>
-        <p class="col text-light">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum
-          quibusdam adipisci
-        </p>
-      </div>
-      <div class="programs row my-4">
-        <div class="icon col-3">
-          <img
-            class="img-fluid"
-            src="./assets/program-icons/board-meeting.png"
-            alt=""
-            srcset=""
-          />
-        </div>
-        <h3 class="text col-4">Meet influencers, recruiters</h3>
-        <p class="col text-light">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum
-          quibusdam adipisc
-        </p>
-      </div>
-      <div class="programs row my-4">
-        <div class="icon col-3">
-          <img
-            class="img-fluid"
-            src="./assets/program-icons/testing.png"
-            alt=""
-            srcset=""
-          />
-        </div>
-        <h3 class="text col-4">Become a beta tester</h3>
-        <p class="col text-light">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum
-          quibusdam adipisci?
-        </p>
-      </div>
 
-      <div class="programs row my-4">
-        <div class="icon col-3">
-          <img
-            class="img-fluid"
-            src="./assets/program-icons/conversation.png"
-            alt=""
-            srcset=""
-          />
+      <div class="pt-4 program-container">
+        <div class="programs">
+          <div class="icon">
+            <img src="./assets/program-icons/contract.png" alt="" srcset="" />
+          </div>
+          <div class="program-description">
+            <h3>3 Life changing days</h3>
+            <p class="text-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
         </div>
-        <h3 class="text col-4">Build connections</h3>
-        <p class="col text-light">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rerum
-          quibusdam adipisci?
-        </p>
+        <div class="programs">
+          <div class="icon">
+            <img
+              src="./assets/program-icons/artificial-intelligence.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="">
+            <div class="program-description">
+              <h3>Learn AI from leading proffesionals</h3>
+              <p class="text-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                rerum quibusdam adipisci
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="programs">
+          <div class="icon">
+            <img
+              src="./assets/program-icons/board-meeting.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="program-description">
+            <h3>Meet influencers, recruiters</h3>
+            <p class="text-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              rerum quibusdam adipisc
+            </p>
+          </div>
+        </div>
+        <div class="programs">
+          <div class="icon">
+            <img src="./assets/program-icons/testing.png" alt="" srcset="" />
+          </div>
+          <div class="program-description">
+            <h3>Become a beta tester</h3>
+            <p class="text-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              rerum quibusdam adipisci?
+            </p>
+          </div>
+        </div>
+
+        <div class="programs">
+          <div class="icon">
+            <img
+              src="./assets/program-icons/conversation.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="program-description">
+            <h3>Build connections</h3>
+            <p class="text-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              rerum quibusdam adipisci?
+            </p>
+          </div>
+        </div>
       </div>
       <div class="button container d-flex justify-content-center">
         <button class="reserve-your-spot btn text-light p-3 m-4">
@@ -146,43 +154,108 @@
       </div>
     </section>
 
-    <section class="speakers">
+    <section class="speakers container-fluid">
       <div
         class="row d-flex text-dark flex-column justify-content-center align-items-center intro-speakers"
       >
         <h2 class="text-center pt-4">Featured Speakers</h2>
         <span></span>
       </div>
-      <div class="pt-3 card-item row">
-        <div class="card-img col-4">
-          <img class="speaker-bg" src="./assets/raster.jpg"/>
+
+      <div class="speaker-card">
+        <div class="speaker-images">
           <img
-            src="./assets/speakers/pexels-brad-hanks-4757205.jpg"
-            class="img-fluid"
+            src="./assets/speakers/speaker-brad-hanks-.jpg"
             alt=""
             srcset=""
           />
         </div>
 
-        <div class="card-content col-8 d-flex flex-column">
-         <div class="card-id d-flex flex-column row">
-          <h3>Brad</h3>
-          <h4>Position, influences</h4>
-          <span></span>
-         </div>
-          <p class="pt-3">
+        <div class="speaker-description">
+          <div class="">
+            <h3>Brad</h3>
+            <h4>Position, influences</h4>
+            <span></span>
+          </div>
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At facere
-    
+          </p>
+        </div>
+      </div>
+      <div class="speaker-card">
+        <div class="speaker-images">
+          <img
+            src="./assets/speakers/speaker-brad-hanks-.jpg"
+            alt=""
+            srcset=""
+          />
+        </div>
+
+        <div class="speaker-description">
+          <div class="">
+            <h3>Brad</h3>
+            <h4>Position, influences</h4>
+            <span></span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At facere
           </p>
         </div>
       </div>
 
-     <div class="show-more d-flex justify-content-center mb-4">
-      <button class=" btn">
-        see More <i class="fa-solid fa-angle-down"></i>
-      </button>
-     </div>
+      <div class="show-more d-flex d-md-none justify-content-center mb-4">
+        <button class="btn">
+          see More <i class="fa-solid fa-angle-down"></i>
+        </button>
+      </div>
     </section>
+
+    <section class="partners d-none d-md-block">
+      <div
+        class="row d-flex text-dark flex-column justify-content-center align-items-center intro-speakers"
+      >
+        <h2 class="text-center text-light pt-4">Partners</h2>
+        <span></span>
+      </div>
+      <div class="brands-container container">
+        <div class="brand">
+          <img src="./assets/supporting-brands/adidas.png" alt="" srcset="" />
+        </div>
+        <div class="brand">
+          <img src="./assets/supporting-brands/apple.png" alt="" srcset="" />
+        </div>
+        <div class="brand">
+          <img src="./assets/supporting-brands/huawei.png" alt="" srcset="" />
+        </div>
+        <div class="brand">
+          <img
+            src="./assets/supporting-brands/brands-and-logotypes.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+
+        <div class="brand">
+          <img
+            src="./assets/supporting-brands/mozilla-logo.jpg"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer class="container d-md-flex d-none">
+      <div id="footer-logo"> <img src="./assets/ILinuxConnect-logos_black.png" alt="" srcset=""></div>
+      <div class="text-right">
+        <h5>2022 Global ILnux connect Some Rights Reserved</h5>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nostrum
+          voluptates suscipit, voluptatibus maxime accusamus tenetur laudantium
+          conseq
+        </p>
+      </div>
+    </footer>
 
     <script src="./nav-menu.js"></script>
     <script src="./dynamic-html.js"></script>
