@@ -270,7 +270,7 @@ nav {
 
 .speaker-card {
   display: flex;
-  //   flex-wrap: wrap;
+
   .speaker-images {
     background-image: url(/assets/20x20sqaures.svg);
     background-size: 100px 100px;
@@ -324,7 +324,7 @@ nav {
 @media screen and (min-width: 768px) {
   .speaker-card {
     .speaker-images {
-      width: 30%;
+      width: 40%;
       img {
         width: 90%;
       }
@@ -336,15 +336,27 @@ nav {
   }
   .speakers {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20% auto;
     grid-gap: 10px;
-    // width: 100%;
-    .intro-speakers {
-      grid-column: span 12;
-    }
-    .speaker-card {
-      grid-column: span 6;
-    }
+  
+height: 100vh;
+   #speaker-container{
+
+     display: grid;
+     grid-template-columns: repeat(12,1fr);
+     align-items: center;
+     .one{
+      grid-column: 1/ span 6;
+     }
+     .two{
+       grid-column: 7/ span 6;
+     }
+   }
+    
+   
+   
+    
+    
   }
 
   .partners {
