@@ -1,5 +1,5 @@
 body {
-  background-color: #d3d3d3;
+  background-color: #fff;
 }
 
 header {
@@ -107,6 +107,48 @@ header nav ul {
   text-align: center;
 }
 
+.testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #E7E8E9;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 130vh;
+  margin-bottom: 7%;
+}
+
+.testimonial h2 {
+  color: #272a31;
+  text-align: center;
+}
+
+.testimonial h2::after {
+  content: '';
+  background-color: #ec5242;
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  margin-left: -50px;
+}
+
+.testimonial h2::after {
+  left: 50%;
+  top: 10%;
+}
+
 .testimonial .overlay {
   width: 300px;
   position: relative;
@@ -144,11 +186,12 @@ header nav ul {
 }
 
 .testimonial .history-1 {
-  background-image: url(../assets/speakers/pexels-mikhail-nilov-8872471.jpg);
+  margin-top: 15%;
+  background-image: url(../assets/about/conference-1.jpg);
 }
 
 .testimonial .history-2 {
-  background-image: url(../assets/speakers/pexels-mikhail-nilov-8872471.jpg);
+  background-image: url(../assets/about/conference-2.jpg);
 }
 
 .testimonial .overlay::before {
@@ -161,13 +204,119 @@ header nav ul {
   right: 0;
 }
 
+.mid-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #E7E8E9;
+  position: relative;
+  height: 80vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .mid-section h2 {
+  color: #272a31;
   text-align: center;
 }
 
+.mid-section h2::after {
+  content: '';
+  background-color: #ec5242;
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  margin-left: -50px;
+}
+
+.mid-section h2::after {
+  top: 18%;
+  left: 50%;
+}
+
+.mid-section p {
+  text-align: center;
+}
+
+.mid-section .logo {
+  width: 64%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: solid #272a31 1px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10%;
+}
+
+.mid-section .logo img {
+  position: relative;
+  width: 60%;
+  display: block;
+  z-index: 15;
+  top: 10%;
+  left: 4%;
+  height: 120px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #E7E8E9;
+  position: relative;
   background-color: #272a31;
   width: 100%;
+  height: 60vh;
+}
+
+.partners h2 {
+  color: #272a31;
+  text-align: center;
+}
+
+.partners h2::after {
+  content: '';
+  background-color: #ec5242;
+  width: 100px;
+  height: 2px;
+  position: absolute;
+  margin-left: -50px;
+}
+
+.partners h2 {
+  color: whitesmoke;
+}
+
+.partners h2::after {
+  top: 18%;
+  left: 50%;
 }
 
 .partners .brands-container {
@@ -181,7 +330,8 @@ header nav ul {
 }
 
 .partners .brands-container .brand {
-  width: 20%;
+  width: 100%;
+  margin: 2%;
 }
 
 .partners .brands-container .brand img {
@@ -195,6 +345,16 @@ header nav ul {
      object-fit: contain;
 }
 
+.partners .brands-container .brand:nth-child(3n+1) {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .partners .brands-container .brand:nth-child(3n+1) {
+    display: block;
+  }
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,13 +362,23 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer #logo {
   width: 44%;
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: cover;
-  background-image: url(../assets/ILinuxConnect-logos_black.png);
+}
+
+footer #logo img {
+  position: relative;
+  width: 100%;
+  z-index: 15;
+  top: 10%;
+  left: 4%;
+  height: 120px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 /*# sourceMappingURL=about-styles.css.map */
