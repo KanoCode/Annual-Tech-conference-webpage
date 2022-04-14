@@ -1,4 +1,4 @@
-# Music-conference-webpage
+# Annual-Linux-conference-webpage
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
@@ -6,11 +6,11 @@
 
 
 
-> A webpage for a fictional annual conference where leading music artists all around the world gather to discuss the future of the art form.
+> A webpage for a fictional annual conference where leading tech enthusiasts from all around the world gather to discuss the future of computing powered by linux.
 
 ## Live Demo
 
-[See a Live Demo Here](https://kanocode.github.io/my-portfolio/)
+[See a Live Demo Here](https://kanocode.github.io/Music-conference-webpage/)
 
 
 
