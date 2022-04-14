@@ -3,32 +3,33 @@ $red-text: #ec5242;
 $dark: #272a31;
 
 @mixin introSection {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  background-color: #E7E8E9;
-  position: relative;
-
-
-    h2 {
-      color: $dark;
-      text-align: center;
-    }
-    h2::after{
-      content: '';
-      background-color: #ec5242;
-      width: 100px;
-      height: 2px;
-      position: absolute;
-      margin-left: -50px;
-   
-    }
- 
+  h2 {
+    color: $dark;
+    text-align: center;
+    position: relative;
+    font-size: 2.1rem;
   }
-
+  h2::after {
+    content: "";
+    background-color: #ec5242;
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin-left: -50px;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
   background-color: #fff;
+  width: 100%;
+  hr{
+    margin:2% 0;
+  }
 }
 
 //   header section
@@ -38,31 +39,25 @@ header {
   div {
     display: none;
   }
-  nav {
+nav{
+  margin-top: 4%;
+  a{
+    color: $dark;
     margin-left: 4%;
-    display: flex;
-    justify-content: start;
-    height: 60%;
-    width: 60%;
-    margin-top: 5%;
-    a {
-      width: 38%;
-      i {
-        width: 100%;
-        height: 100%;
-        color: $dark;
-        font-size: 62px;
-      }
+  
+    i{
+      font-size: 44px;
     }
-
-    ul {
-      display: none;
-    }
+  }
+}
+  .nav-items {
+    display: none;
   }
 }
 
 @media only screen and (min-width: 768px) {
   header {
+    height: 34vh;
     div {
       display: flex;
       background-color: $dark;
@@ -74,22 +69,35 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 30%;
+        width: 40%;
       }
     }
     nav {
-      border: greenyellow solid;
       display: flex;
       justify-content: flex-end;
-
-      ul {
-        list-style: none;
-        border: green solid;
+      margin-top: 0;
+      background-color: $grey;
+      .nav-items {
         display: flex;
-        justify-content: space-between;
-        width: 60%;
+        margin-top: 0;
+        list-style: none;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        width: 70%;
+        font-size: 1.5rem;
+
+        height: 10vh;
+        a {
+          text-decoration: none;
+          color: $dark;
+        }
       }
     }
+  }
+
+  nav {
+    display: block;
   }
 }
 
@@ -103,10 +111,10 @@ header {
   h1 {
     font-size: 50px;
     color: #ec5242;
-    
   }
   .intro {
     background-color: #fff;
+    margin: 4%;
     border: solid 1px $grey;
   }
   p {
@@ -114,23 +122,60 @@ header {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .hero {
+    height: 80vh;
+    h2 {
+      width: 68%;
+      margin: 20px auto;
+    }
+
+    h1 {
+      max-width: 70%;
+      margin: auto;
+    }
+    .intro {
+      margin-bottom: 3%;
+      margin-top: 3%;
+      max-width: 70%;
+      margin: auto;
+    }
+    p {
+    
+    }
+  }
+}
+
 //  testimonial section
 
 .testimonial {
   @include introSection();
-justify-content: center;
-background-color: #fff;
-align-items: center;
-height: 130vh;
-margin-bottom: 7%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  .history-title {
+    margin-top: 4%;
+  }
   h2::after {
-    left: 50%;
-    top:10%;
+    top: 100%;
+  }
+
+  .history {
+    margin-top: 15%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .overlay {
     width: 300px;
     position: relative;
-    
+
     height: 300px;
     background-repeat: no-repeat;
     background-position: top left;
@@ -155,8 +200,6 @@ margin-bottom: 7%;
   .history-1 {
     margin-top: 15%;
     background-image: url(../assets/about/conference-1.jpg);
-    h3 {
-    }
   }
   .history-2 {
     background-image: url(../assets/about/conference-2.jpg);
@@ -172,38 +215,94 @@ margin-bottom: 7%;
     right: 0;
   }
 }
+@media only screen and (min-width: 768px) {
+  .testimonial {
+
+    .history-title {
+      font-size: 2.1rem;
+    }
+    .history {
+      width: 80%;
+      margin: 4% auto;
+      height: 60%;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .history-1 {
+      margin-top: 0;
+    }
+
+    h2 {
+      z-index: 3;
+
+      display: block;
+    }
+  }
+}
+
+// mid section
 .mid-section {
   @include introSection();
-  height: 80vh;  
+  margin-top: 10px;
+  height: 60vh;
   align-items: center;
+  background-color: #e7e8e9;
   justify-content: center;
-  h2::after {
-    top:18%;
-    left: 50%;
-  }
-
-
+  display: flex;
+  flex-direction: column;
   p {
     text-align: center;
+    
   }
   .logo {
     width: 64%;
     height: 100%;
+  
     display: flex;
     flex-direction: column;
-    border: solid $dark 1px;
+
+    cursor: pointer;
     justify-content: space-around;
-  align-items: center;
-  margin: 10%;
+    align-items: center;
+    margin: 10%;
     img {
       position: relative;
       width: 60%;
-display: block;
+      display: block;
       z-index: 15;
       top: 10%;
       left: 4%;
       height: 120px;
       object-fit: contain;
+    }
+  }
+}
+//  mid section desktop
+@media only screen and (min-width: 768px) {
+  .mid-section {
+    height: 80vh;
+    margin-top: 0;
+  
+   
+   
+    p {
+      order: 1;
+      max-width: 70%;
+      margin:10% auto;
+    }
+    .logo {
+      order: 2;
+      margin: 0;
+      width: 50%;
+      margin-top: -8%;
+      height: 28%;
+      img {
+        height: 90px;
+        top: 0;
+
+        left: 4%;
+      }
     }
   }
 }
@@ -213,19 +312,16 @@ display: block;
   @include introSection();
   background-color: $dark;
   width: 100%;
-  height: 60vh;
-  h2{
-    color:whitesmoke;
+  height: 43vh;
+  h2 {
+    color: whitesmoke;
   }
-  h2::after {
-    top:18%;
-    left: 50%;
-  }
+
   .brands-container {
     display: flex;
     height: 40vh;
     align-items: center;
-    
+
     .brand {
       width: 100%;
       margin: 2%;
@@ -234,28 +330,26 @@ display: block;
         width: 100%;
 
         z-index: 15;
-        top: 10%;
+        top: 4%;
         left: 4%;
         height: 120px;
         object-fit: contain;
       }
     }
-.brand:nth-child(3n+1){
-  display: none;
-}
-
+    .brand:nth-child(3n + 1) {
+      display: none;
+    }
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .partners{
-    .brands-container{
-      .brand:nth-child(3n+1){
+  .partners {
+    .brands-container {
+      .brand:nth-child(3n + 1) {
         display: block;
       }
     }
   }
-
 }
 
 footer {
@@ -264,8 +358,8 @@ footer {
   align-items: center;
   #logo {
     width: 44%;
-    
-   img {
+
+    img {
       position: relative;
       width: 100%;
 
@@ -275,6 +369,5 @@ footer {
       height: 120px;
       object-fit: contain;
     }
-  
   }
 }
