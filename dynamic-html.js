@@ -49,6 +49,7 @@ const cardsArr = [
 const speakerCardGenerator = function (obj) {
   const cardItem = document.createElement("li");
   cardItem.classList.add(`speaker-card`);
+  cardItem.classList.add(`container-fluid`);
   cardItem.classList.add(`${obj.position}`);
   cardItem.innerHTML = `<div class="speaker-images">
   <img src="${obj.imgUrl}" alt="" />
