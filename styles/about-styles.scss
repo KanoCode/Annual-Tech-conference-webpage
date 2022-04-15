@@ -9,6 +9,7 @@ $dark: #272a31;
     position: relative;
     font-size: 2.1rem;
   }
+
   h2::after {
     content: "";
     background-color: #ec5242;
@@ -20,15 +21,18 @@ $dark: #272a31;
     margin-left: -50px;
   }
 }
+
 * {
   padding: 0;
   margin: 0;
 }
+
 body {
   background-color: #fff;
   width: 100%;
-  hr{
-    margin:2% 0;
+
+  hr {
+    margin: 2% 0;
   }
 }
 
@@ -36,27 +40,31 @@ body {
 
 header {
   height: 14vh;
+
   div {
     display: none;
   }
-nav{
-  margin-top: 4%;
-  a{
-    color: $dark;
-    margin-left: 4%;
-  
-    i{
-      font-size: 44px;
+
+  nav {
+    margin-top: 4%;
+
+    a {
+      color: $dark;
+      margin-left: 4%;
+
+      i {
+        font-size: 44px;
+      }
     }
   }
-}
+
   .nav-items {
     display: none;
   }
 }
 // mobile menu
 
-.active{
+.active {
   list-style: none;
   justify-content: space-around;
   flex-direction: column;
@@ -64,49 +72,52 @@ nav{
   width: 100%;
   z-index: 911;
   height: 100vh;
-  
   position: fixed;
   background-color: #272a31;
   font-size: 1.5rem;
-top: 0;
-left: 0;
-a{
-  color:#fff;
+  top: 0;
+  left: 0;
 
-}
-.nav-items{
-  display: flex;
- 
-  list-style: none;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  width: 70%;
-  font-size: 1.5rem;
-
-  height: 90vh;
   a {
-    text-decoration: none;
-    color: white;
+    color: #fff;
   }
-  a:hover{
-    text-decoration: underline;
-    color: #ec5242;
+
+  .nav-items {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    font-size: 1.5rem;
+    height: 90vh;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #ec5242;
+    }
   }
 }
-
-}
-
-
 
 @media only screen and (min-width: 768px) {
+  nav {
+    display: block;
+  }
+
   header {
     height: 34vh;
+
     div {
       display: flex;
       background-color: $dark;
       height: 10vh;
       justify-content: flex-end;
+
       ul {
         list-style: none;
         color: #fff;
@@ -116,11 +127,13 @@ a{
         width: 40%;
       }
     }
+
     nav {
       display: flex;
       justify-content: flex-end;
       margin-top: 0;
       background-color: $grey;
+
       .nav-items {
         display: flex;
         margin-top: 0;
@@ -130,18 +143,14 @@ a{
         align-items: center;
         width: 70%;
         font-size: 1.5rem;
-
         height: 10vh;
+
         a {
           text-decoration: none;
           color: $dark;
         }
       }
     }
-  }
-
-  nav {
-    display: block;
   }
 }
 
@@ -152,15 +161,18 @@ a{
   h2 {
     color: $red-text;
   }
+
   h1 {
     font-size: 50px;
     color: #ec5242;
   }
+
   .intro {
     background-color: #fff;
     margin: 4%;
     border: solid 1px $grey;
   }
+
   p {
     text-align: center;
   }
@@ -169,6 +181,7 @@ a{
 @media only screen and (min-width: 768px) {
   .hero {
     height: 80vh;
+
     h2 {
       width: 68%;
       margin: 20px auto;
@@ -178,109 +191,10 @@ a{
       max-width: 70%;
       margin: auto;
     }
+
     .intro {
-      margin-bottom: 3%;
-      margin-top: 3%;
+      margin: 3% 0;
       max-width: 70%;
-      margin: auto;
-    }
-    p {
-    
-    }
-  }
-}
-
-//  testimonial section
-
-.testimonial {
-  @include introSection();
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  height: 100vh;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  .history-title {
-    margin-top: 4%;
-  }
-  h2::after {
-    top: 100%;
-  }
-
-  .history {
-    margin-top: 15%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .overlay {
-    width: 300px;
-    position: relative;
-
-    height: 300px;
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    .text-over-image {
-      z-index: 111;
-      text-align: center;
-      color: #fff;
-      h3 {
-        font-size: 35px;
-      }
-      p {
-        font-size: 35px;
-      }
-    }
-  }
-
-  .history-1 {
-    margin-top: 15%;
-    background-image: url(../assets/about/conference-1.jpg);
-  }
-  .history-2 {
-    background-image: url(../assets/about/conference-2.jpg);
-  }
-
-  .overlay::before {
-    content: "";
-    background: rgba(211, 102, 83, 0.6);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .testimonial {
-
-    .history-title {
-      font-size: 2.1rem;
-    }
-    .history {
-      width: 80%;
-      margin: 4% auto;
-      height: 60%;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
-    }
-    .history-1 {
-      margin-top: 0;
-    }
-
-    h2 {
-      z-index: 3;
-
-      display: block;
     }
   }
 }
@@ -288,6 +202,7 @@ a{
 // mid section
 .mid-section {
   @include introSection();
+
   margin-top: 10px;
   height: 60vh;
   align-items: center;
@@ -295,21 +210,21 @@ a{
   justify-content: center;
   display: flex;
   flex-direction: column;
+
   p {
     text-align: center;
-    
   }
+
   .logo {
     width: 64%;
     height: 100%;
-  
     display: flex;
     flex-direction: column;
-
     cursor: pointer;
     justify-content: space-around;
     align-items: center;
     margin: 10%;
+
     img {
       position: relative;
       width: 60%;
@@ -327,26 +242,125 @@ a{
   .mid-section {
     height: 80vh;
     margin-top: 0;
-  
-   
-   
+
     p {
       order: 1;
       max-width: 70%;
-      margin:10% auto;
+      margin: 10% auto;
     }
+
     .logo {
       order: 2;
       margin: 0;
       width: 50%;
       margin-top: -8%;
       height: 28%;
+
       img {
         height: 90px;
         top: 0;
-
         left: 4%;
       }
+    }
+  }
+}
+//  testimonial section
+
+.testimonial {
+  @include introSection();
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  align-items: center;
+
+  .history-title {
+    margin-top: 4%;
+  }
+
+  h2::after {
+    top: 100%;
+  }
+
+  .history {
+    margin-top: 15%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overlay {
+    width: 300px;
+    position: relative;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .text-over-image {
+      z-index: 111;
+      text-align: center;
+      color: #fff;
+
+      h3 {
+        font-size: 35px;
+      }
+
+      p {
+        font-size: 35px;
+      }
+    }
+  }
+
+  .history-1 {
+    margin-top: 15%;
+    background-image: url(../assets/about/conference-1.jpg);
+  }
+
+  .history-2 {
+    background-image: url(../assets/about/conference-2.jpg);
+  }
+
+  .overlay::before {
+    content: "";
+    background: rgba(211, 102, 83, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .testimonial {
+    .history-title {
+      font-size: 2.1rem;
+    }
+
+    .history {
+      width: 80%;
+      margin: 4% auto;
+      height: 60%;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .history-1 {
+      margin-top: 0;
+    }
+
+    h2 {
+      z-index: 3;
+      display: block;
     }
   }
 }
@@ -354,9 +368,11 @@ a{
 // Partners
 .partners {
   @include introSection();
+
   background-color: $dark;
   width: 100%;
   height: 43vh;
+
   h2 {
     color: whitesmoke;
   }
@@ -369,10 +385,10 @@ a{
     .brand {
       width: 100%;
       margin: 2%;
+
       img {
         position: relative;
         width: 100%;
-
         z-index: 15;
         top: 4%;
         left: 4%;
@@ -380,6 +396,7 @@ a{
         object-fit: contain;
       }
     }
+
     .brand:nth-child(3n + 1) {
       display: none;
     }
@@ -400,13 +417,13 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   #logo {
     width: 44%;
 
     img {
       position: relative;
       width: 100%;
-
       z-index: 15;
       top: 10%;
       left: 4%;

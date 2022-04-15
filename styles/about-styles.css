@@ -40,14 +40,14 @@ header .nav-items {
 .active {
   list-style: none;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   z-index: 911;
   height: 100vh;
@@ -68,14 +68,14 @@ header .nav-items {
   display: flex;
   list-style: none;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 70%;
   font-size: 1.5rem;
   height: 90vh;
@@ -95,6 +95,7 @@ header .nav-items {
   header {
     height: 34vh;
   }
+
   header div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -102,9 +103,10 @@ header .nav-items {
     background-color: #272a31;
     height: 10vh;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
   }
+
   header div ul {
     list-style: none;
     color: #fff;
@@ -112,23 +114,25 @@ header .nav-items {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     width: 40%;
   }
+
   header nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     margin-top: 0;
     background-color: #d3d3d3;
   }
+
   header nav .nav-items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -136,23 +140,25 @@ header .nav-items {
     margin-top: 0;
     list-style: none;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 70%;
     font-size: 1.5rem;
     height: 10vh;
   }
+
   header nav .nav-items a {
     text-decoration: none;
     color: #272a31;
   }
+
   nav {
     display: block;
   }
@@ -185,14 +191,17 @@ header .nav-items {
   .hero {
     height: 80vh;
   }
+
   .hero h2 {
     width: 68%;
     margin: 20px auto;
   }
+
   .hero h1 {
     max-width: 70%;
     margin: auto;
   }
+
   .hero .intro {
     margin-bottom: 3%;
     margin-top: 3%;
@@ -207,14 +216,14 @@ header .nav-items {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100%;
   position: relative;
   height: 100vh;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
 }
@@ -253,11 +262,11 @@ header .nav-items {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .testimonial .overlay {
@@ -271,15 +280,15 @@ header .nav-items {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .testimonial .overlay .text-over-image {
@@ -319,24 +328,27 @@ header .nav-items {
   .testimonial .history-title {
     font-size: 2.1rem;
   }
+
   .testimonial .history {
     width: 80%;
     margin: 4% auto;
     height: 60%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
+
   .testimonial .history-1 {
     margin-top: 0;
   }
+
   .testimonial h2 {
     z-index: 3;
     display: block;
@@ -347,19 +359,19 @@ header .nav-items {
   margin-top: 10px;
   height: 60vh;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-color: #e7e8e9;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .mid-section h2 {
@@ -392,14 +404,14 @@ header .nav-items {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   cursor: pointer;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 10%;
 }
 
@@ -412,7 +424,7 @@ header .nav-items {
   left: 4%;
   height: 120px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 @media only screen and (min-width: 768px) {
@@ -420,22 +432,25 @@ header .nav-items {
     height: 80vh;
     margin-top: 0;
   }
+
   .mid-section p {
     -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -ms-flex-order: 1;
+    order: 1;
     max-width: 70%;
     margin: 10% auto;
   }
+
   .mid-section .logo {
     -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    -ms-flex-order: 2;
+    order: 2;
     margin: 0;
     width: 50%;
     margin-top: -8%;
     height: 28%;
   }
+
   .mid-section .logo img {
     height: 90px;
     top: 0;
@@ -477,8 +492,8 @@ header .nav-items {
   display: flex;
   height: 40vh;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .partners .brands-container .brand {
@@ -494,7 +509,7 @@ header .nav-items {
   left: 4%;
   height: 120px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .partners .brands-container .brand:nth-child(3n + 1) {
@@ -512,11 +527,11 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 footer #logo {
@@ -531,6 +546,5 @@ footer #logo img {
   left: 4%;
   height: 120px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
-/*# sourceMappingURL=about-styles.css.map */

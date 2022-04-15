@@ -12,8 +12,6 @@
 
 [See a Live Demo Here](https://kanocode.github.io/Music-conference-webpage/)
 
-
-
 ## Built With
 
 - HTML
@@ -22,12 +20,10 @@
 - BOOTSTRAP
 ## Getting Started
 
-
 To get a local copy up and running follow these simple example steps.
 -fork this repostory
--clone it to your local machine 
+-clone it to your local machine
 -make changes
-
 
 ## Author
 
@@ -42,11 +38,11 @@ To get a local copy up and running follow these simple example steps.
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
+
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Design inspiration: [Cindy Shin from behance.net](https://www.behance.net/adagio07) 
-
+- Design inspiration: [Cindy Shin from behance.net](https://www.behance.net/adagio07)
 
 ## Show your support
 
@@ -55,4 +51,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
-

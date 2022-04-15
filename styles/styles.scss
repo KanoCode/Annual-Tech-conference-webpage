@@ -1,6 +1,7 @@
 $grey: #d3d3d3;
 $red-text: #ec5242;
 $dark: #272a31;
+
 body {
   padding: 0;
   margin: 0;
@@ -12,10 +13,12 @@ body {
   max-width: 30%;
   margin: 0;
 }
+
 @mixin introSection {
   h2 {
     color: $dark;
   }
+
   span {
     background-color: #ec5242;
     width: 100px;
@@ -24,6 +27,49 @@ body {
 }
 
 // mobile menu
+
+nav {
+  background-color: transparent;
+
+  i {
+    position: relative;
+    color: $grey;
+    font-size: 35px;
+  }
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  .container-md {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+
+    a {
+      margin-left: 15%;
+      margin-top: 15px;
+
+      i {
+        font-size: 2.6rem;
+        position: absolute;
+        top: 10%;
+        left: 4%;
+      }
+    }
+
+    .nav-items {
+      display: none;
+    }
+  }
+}
+
 .active {
   list-style: none;
   justify-content: space-around;
@@ -36,56 +82,29 @@ body {
   font-size: 1.5rem;
   top: 0;
   left: 0;
+
   a {
     color: #fff;
   }
+
   .nav-items {
     display: flex;
-
     list-style: none;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
     width: 70%;
     font-size: 1.5rem;
-
     height: 90vh;
+
     a {
       text-decoration: none;
       color: white;
     }
+
     a:hover {
       text-decoration: underline;
       color: #ec5242;
-    }
-  }
-}
-
-header {
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  .container-md {
-   display: none;
-  }
-
-  nav {
-    display: flex;
-
-    a {
-      margin-left: 15%;
-      margin-top: 15px;
-      i {
-        font-size: 2.6rem;
-        position: absolute;
-        top: 10%;
-        left: 4%;
-      }
-    }
-    .nav-items {
-      display: none;
     }
   }
 }
@@ -97,18 +116,23 @@ header {
   }
 }
 
-nav {
-  background-color: transparent;
-  i {
-    position: relative;
-    color: $grey;
-    font-size: 35px;
+.main-program {
+  h3 {
+    color: #ec5242;
+    font-size: 100%;
   }
+
+  span {
+    background-color: #ec5242;
+    width: 100px;
+    height: 2px;
+  }
+
+  @include buttonStyles;
 }
 
 .welcome {
   background: url(../assets/product-school-r1wHNmAPWKA-unsplash.jpg) top center;
-  
   background-size: cover;
   background-color: #fff;
   width: 100%;
@@ -121,8 +145,8 @@ nav {
     font-size: 4.1rem;
     width: 80%;
     margin-top: 20%;
-    font-style: bold;
     z-index: 10;
+
     span {
       color: #ec5242;
     }
@@ -138,6 +162,7 @@ nav {
   left: 0;
   right: 0;
 }
+
 .hero-container {
   position: absolute;
   bottom: 0;
@@ -151,45 +176,48 @@ nav {
   flex-direction: column;
   text-align: center;
   padding: 0 15px;
+
   h2 {
     color: #ec5242;
   }
 }
+
 @media screen and (min-width: 768px) {
   .hero-container {
     h1 {
       max-width: 669px;
-
       padding-top: 10%;
     }
+
     .event-description {
       max-width: 669px;
     }
   }
 
-
-
   header {
     position: relative;
+
     .container-md {
-   
       display: block;
-     ul{
-       display: flex;
-       list-style: none;
-       justify-content: flex-end;
-       li{
-         margin:1% 4%;
-       }
-     }
+
+      ul {
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+
+        li {
+          margin: 1% 4%;
+        }
+      }
     }
-  
+
     nav {
       display: flex;
-  
+
       a {
         margin-left: 15%;
         margin-top: 15px;
+
         i {
           font-size: 2.6rem;
           position: absolute;
@@ -197,50 +225,38 @@ nav {
           left: 4%;
         }
       }
-      .nav-items {
 
+      .nav-items {
         width: 80%;
         display: flex;
         list-style: none;
         height: 10vh;
         align-items: center;
         justify-content: space-between;
-      a{
-        font-size: 2.2rem;
-        color: $dark;
-        text-decoration: none;
-      }
-      a:hover{
-        color: #ec5242;
-        text-decoration: underline;
-      }
+
+        a {
+          font-size: 2.2rem;
+          color: $dark;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: #ec5242;
+          text-decoration: underline;
+        }
       }
     }
   }
-  
-
 }
 
 // End of hero section
-
-.main-program {
-  h3 {
-    color: #ec5242;
-    font-size: 100%;
-  }
-  span {
-    background-color: #ec5242;
-    width: 100px;
-    height: 2px;
-  }
-  @include buttonStyles;
-}
 
 .program-container {
   .programs {
     padding-top: 10%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
     .icon {
       display: flex;
       justify-content: center;
@@ -252,6 +268,7 @@ nav {
       margin-left: 4%;
       display: flex;
       align-items: center;
+
       p {
         padding-left: 4px;
       }
@@ -268,23 +285,25 @@ nav {
     .programs {
       display: flex;
       text-align: center;
-
       opacity: 0.9;
       background-color: $dark;
-
       width: 90%;
       flex-direction: column;
+
       .program-description {
         display: flex;
         flex-direction: column;
+
         h3 {
           padding-top: 2%;
         }
+
         p {
           padding-top: 2%;
           text-align: center;
         }
       }
+
       .icon {
         img {
           display: block;
@@ -292,6 +311,7 @@ nav {
         }
       }
     }
+
     .programs:hover {
       cursor: pointer;
       border: solid $grey 1px;
@@ -309,11 +329,13 @@ nav {
 
   button {
     width: 80%;
+
     i {
       color: #ec5242;
     }
   }
 }
+
 #speaker-container {
   margin-top: 11%;
 }
@@ -329,6 +351,7 @@ nav {
     width: 36%;
     height: 25vh;
     margin-right: 2%;
+
     img {
       position: relative;
       width: 90%;
@@ -339,6 +362,7 @@ nav {
       object-fit: contain;
     }
   }
+
   .speaker-description {
     width: 70%;
   }
@@ -356,6 +380,7 @@ nav {
   h3 {
     font-size: 18px;
   }
+
   h4 {
     font-size: 15px;
     color: $red-text;
@@ -366,6 +391,7 @@ nav {
   border: solid $grey 2px;
   color: $grey;
   margin-top: 10px;
+
   button {
     background-color: #fff;
   }
@@ -375,29 +401,34 @@ nav {
   .speaker-card {
     .speaker-images {
       width: 40%;
+
       img {
         width: 90%;
       }
     }
+
     .speaker-description {
       padding-top: 4%;
       width: 70%;
     }
   }
+
   .speakers {
     display: grid;
     grid-template-rows: 20% auto;
     grid-gap: 10px;
-
     height: 100vh;
+
     #speaker-container {
       display: grid;
       margin-top: 0;
       grid-template-columns: repeat(12, 1fr);
       align-items: center;
+
       .one {
         grid-column: 1 / span 6;
       }
+
       .two {
         grid-column: 7 / span 6;
       }
@@ -406,20 +437,23 @@ nav {
 
   .partners {
     @include introSection();
+
     background-color: $dark;
     width: 100%;
     height: 60vh;
     margin-top: 20%;
+
     .brands-container {
       display: flex;
       height: 40vh;
       align-items: center;
+
       .brand {
         width: 20%;
+
         img {
           position: relative;
           width: 100%;
-
           z-index: 15;
           top: 10%;
           left: 4%;
@@ -433,31 +467,34 @@ nav {
   footer {
     height: 30vh;
     display: flex;
+
     #footer-logo {
       width: 30%;
+
       img {
         position: relative;
         width: 100%;
-
         z-index: 15;
         top: 10%;
         left: 4%;
         height: 230px;
-
         object-fit: contain;
       }
     }
+
     .text-right {
       margin-top: 11%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+
       h5 {
         text-align: center;
         font-size: 12px;
         font-weight: 600;
       }
+
       p {
         text-align: center;
         font-size: 12px;
