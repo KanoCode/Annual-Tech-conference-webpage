@@ -107,6 +107,20 @@ header {
 @media only screen and (min-width: 768px) {
   nav {
     display: block;
+    #logo-img{
+      width: 40%;
+      position: relative;
+     img{
+    
+       position: absolute;
+       width: 90%;
+       display: block;
+       z-index: 15;
+      
+       height: 100%;
+       object-fit: contain;
+     }
+    }
   }
 
   header {
@@ -193,7 +207,7 @@ header {
     }
 
     .intro {
-      margin: 3% 0;
+      margin: 3% auto;
       max-width: 70%;
     }
   }
