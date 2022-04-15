@@ -13,7 +13,7 @@
 [See a Live Demo Here](https://kanocode.github.io/Annual-Tech-conference-webpage/)
 
 ## Video Presentation
-[]
+[Video presentation](https://www.loom.com/share/f16731ceaef34a20a1f9516cfcb11bea)
 
 ## Built With
 
