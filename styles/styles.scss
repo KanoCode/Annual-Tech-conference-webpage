@@ -8,24 +8,6 @@ body {
   overflow-x: hidden;
 }
 
-@mixin padding-reset {
-  padding: 0;
-  max-width: 30%;
-  margin: 0;
-}
-
-@mixin introSection {
-  h2 {
-    color: $dark;
-  }
-
-  span {
-    background-color: #ec5242;
-    width: 100px;
-    height: 2px;
-  }
-}
-
 // mobile menu
 
 nav {
@@ -323,7 +305,15 @@ header {
 // Speakers
 .speakers {
   .intro-speakers {
-    @include introSection;
+    h2 {
+      color: $dark;
+    }
+
+    span {
+      background-color: #ec5242;
+      width: 100px;
+      height: 2px;
+    }
   }
 
   button {
@@ -435,7 +425,15 @@ header {
   }
 
   .partners {
-    @include introSection();
+    h2 {
+      color: $dark;
+    }
+
+    span {
+      background-color: #ec5242;
+      width: 100px;
+      height: 2px;
+    }
 
     background-color: $dark;
     width: 100%;
