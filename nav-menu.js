@@ -1,4 +1,5 @@
 const navBtn = document.querySelector('nav > a > i');
+// navAnchorTag.setAttribute('href','./index.html');
 
 const mobileMenu = document.querySelector('nav');
 

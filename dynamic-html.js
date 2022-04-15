@@ -72,7 +72,6 @@ const speakerCardGenerator = (obj) => {
 const mediaQuery = '(min-width: 768px)';
 function dynamicHtmlForSpecicScreenGenerator() {
   const matched = this.matchMedia(mediaQuery).matches;
-
   if (matched) {
     speakerContainer.innerHTML = '';
     cardsArr.forEach((a) => {
