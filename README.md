@@ -10,7 +10,7 @@
 
 ## Live Demo
 
-[See a Live Demo Here](https://kanocode.github.io/Music-conference-webpage/)
+[See a Live Demo Here](https://kanocode.github.io/Annual-Tech-conference-webpage/)
 
 ## Built With
 
