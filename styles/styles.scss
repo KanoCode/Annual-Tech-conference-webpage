@@ -109,13 +109,6 @@ header {
   }
 }
 
-@mixin buttonStyles {
-  button {
-    background-color: #ec5242;
-    border-radius: 0;
-  }
-}
-
 .main-program {
   h3 {
     color: #ec5242;
@@ -128,7 +121,10 @@ header {
     height: 2px;
   }
 
-  @include buttonStyles;
+  button {
+    background-color: #ec5242;
+    border-radius: 0;
+  }
 }
 
 .welcome {
@@ -138,7 +134,10 @@ header {
   width: 100%;
   min-height: 116vh;
 
-  @include buttonStyles;
+  button {
+    background-color: #ec5242;
+    border-radius: 0;
+  }
 
   h1 {
     color: #fff;
