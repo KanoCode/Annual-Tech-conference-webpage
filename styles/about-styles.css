@@ -346,14 +346,6 @@ header .nav-items {
   margin-left: -50px;
 }
 
-.testimonial .history-title {
-  margin-top: 4%;
-}
-
-.testimonial h2::after {
-  top: 100%;
-}
-
 .testimonial .history {
   margin-top: 15%;
   height: 80%;
@@ -459,7 +451,7 @@ header .nav-items {
 }
 
 .partners h2 {
-  color: #272a31;
+  color: whitesmoke;
   text-align: center;
   position: relative;
   font-size: 2.1rem;
@@ -474,10 +466,6 @@ header .nav-items {
   left: 50%;
   top: 100%;
   margin-left: -50px;
-}
-
-.partners h2 {
-  color: whitesmoke;
 }
 
 .partners .brands-container {
