@@ -2,7 +2,8 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-![screenshot](assets/capstone-screenshot.png)
+
+![all-devices-screenshot](https://user-images.githubusercontent.com/95347844/173331282-85536695-5903-4ba8-a070-f69ce0848ae7.png)
 
 
 
